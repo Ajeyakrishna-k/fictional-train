@@ -53,6 +53,7 @@ const userSchema = new mongoose.Schema ({
 });
 
 const productsSchema = new mongoose.Schema ({
+  productImageUrl :String,
   productUrl :String,
   productName: String,
   type: String
