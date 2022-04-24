@@ -12,20 +12,24 @@
             </div>
 
             <div class="modal-body p-5 pt-0">
-                <form class="">
+                <form action="/signup/newUser" method="POST">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-4" id="floatingInput"
+                        <input class="form-control rounded-4" id="floatingInputName" placeholder="Name" name="name">
+                        <label for="floatingInputName">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-4" id="floatingInput" name="username"
                             placeholder="name@example.com">
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-4" id="floatingPassword"
+                        <input type="password" class="form-control rounded-4" id="floatingPassword" name="password"
                             placeholder="Password">
                         <label for="floatingPassword">Password</label>
                     </div>
                     <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
                     <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                    <hr class="my-4">
+                    <!-- <hr class="my-4">
                     <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
                     <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
                         <svg class="bi me-1" width="16" height="16">
@@ -43,8 +47,8 @@
                         <svg class="bi me-1" width="16" height="16">
                             <use xlink:href="#github"></use>
                         </svg>
-                        Sign up with GitHub
-                    </button>
+                        Sign up with GitHub -->
+                    <!-- </button> -->
                 </form>
             </div>
         </div>
@@ -65,19 +69,19 @@
             </div>
 
             <div class="modal-body p-5 pt-0">
-                <form class="">
+                <form action="/login" method="POST">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-4" id="floatingInput"
+                        <input type="email" class="form-control rounded-4" id="floatingInput1" name="username"
                             placeholder="name@example.com">
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-4" id="floatingPassword"
+                        <input type="password" class="form-control rounded-4" id="floatingPassword1" name="password"
                             placeholder="Password">
                         <label for="floatingPassword">Password</label>
                     </div>
                     <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Login</button>
-                    <hr class="my-4">
+                    <!-- <hr class="my-4">
                     <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
                     <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
                         <svg class="bi me-1" width="16" height="16">
@@ -96,7 +100,7 @@
                             <use xlink:href="#github"></use>
                         </svg>
                         Sign in with GitHub
-                    </button>
+                    </button> -->
                 </form>
             </div>
         </div>
